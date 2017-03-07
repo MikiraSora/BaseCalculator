@@ -204,7 +204,7 @@ namespace BaseCalculator
             if (isValidVariable(sub_expression))
                 NodeChain.Add(new DigitNode(requestVariable(sub_expression)));
             else
-                throw new InvaildOperationException(position, String.Format("%s is invalid variable in table", sub_expression));
+                throw new InvaildOperationException(position, String.Format("{0} is invalid variable in table", sub_expression));
         }
 
         private OnRequestVariableValue requestVariableValue;

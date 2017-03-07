@@ -8,6 +8,6 @@ namespace BaseCalculator
 {
     public class InvaildOperationException : Exception
     {
-        public InvaildOperationException(int pos, String msg) : base(String.Format("In position %d , %s", pos, msg)){ }
+        public InvaildOperationException(int pos, String msg) : base(String.Format("In position {0} , {1} ", pos, msg)){ }
     }
 }
